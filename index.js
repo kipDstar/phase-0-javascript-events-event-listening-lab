@@ -1,4 +1,4 @@
-function addingEventListener() {const input = document.getElementById('button');
+/*function addingEventListener() {const input = document.getElementById('button');
 
     function clickAlert() {
       alert('I was clicked!');
@@ -14,4 +14,17 @@ function addingEventListener() {const input = document.getElementById('button');
     
     clicker.addEventListener('click', clickMessage);
     
-}
+}*/
+function addingEventListener() {
+
+function clickAlert() {
+  alert('I was clicked')
+};
+
+function clickMessage() {
+  alert('I was touched');
+};
+
+document.getElementById('button').addEventListener('click', clickAlert);
+document.querySelector('#main').addEventListener('click', clickMessage);
+};
